@@ -1,0 +1,91 @@
+/*google fonts
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
+// Base
+@import "./base/variables";
+@import "./base/listas";
+@import "./base/maps";
+@import "./base/extend";
+@import "./base/mixin";
+
+
+// componentes
+
+@import "./componentes/navbar";
+@import "./componentes/footer";
+
+
+  /*index*/
+  .sech1__index{
+    @extend %sec1;
+}
+.sech2__index{
+    @include sech2;
+    margin-top: map-get($section, mar-top );
+}
+  
+.parrafo{
+    font-family: $title-h2;
+    font-size: $font-p;
+    font-weight: $font-2;
+}
+.imgsec2{
+    font-size: 50px;
+}
+.sech2div{
+    margin-top: map-get($section, mar-top );
+    margin-left: 10%;
+    justify-content: map-get($section, justi-cont);
+    align-items: map-get($section, justi-cont);
+}
+/*nosotros*/
+.p-nos{
+    position: map-get($section,posit);
+    font-family: $title-h1;
+    font-size: 8rem;
+    font-weight: $font-1; 
+}
+/*computadoras*/
+.main-pc{
+margin-top: 3%;
+}
+/*contacto*/
+.contac{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+main{
+    div{
+        h2{
+            margin-bottom: 3%;
+        }
+    }
+    section{
+        margin-bottom: 3%;
+    }
+}
+main{
+    section{
+        h3{
+            margin-top: 2%;
+        }
+        p{
+            font-family: $p-2;
+            font-size: $font-p;
+            font-weight: $font-2;
+        }
+        div{
+            div{
+                div{
+                    p{
+                        font-family: $p-1;
+                    }
+                }
+            }
+        }
+    }
+}

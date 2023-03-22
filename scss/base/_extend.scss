@@ -1,0 +1,8 @@
+%sec1{
+    position: map-get($section,posit);
+    font-family: $title-h1;
+    font-size: map-get($section, font-si );
+    font-weight: $font-1;
+    justify-content: map-get($section, justi-cont);
+    
+}

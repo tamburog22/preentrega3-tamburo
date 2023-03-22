@@ -1,0 +1,7 @@
+@mixin sech2{
+    text-align: map-get($section, justi-cont);
+    font-family: $title-h1;
+    font-size: map-get($section2,font-si );
+    font-weight: $font-1;
+    
+}
